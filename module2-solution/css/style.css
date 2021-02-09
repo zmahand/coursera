@@ -1,0 +1,68 @@
+/*** Base Styling is Desktop View ***/
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+}
+
+h1 {
+	padding-top: 25px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+div.main-text {
+	width: 31%;
+	float:left;
+	margin:10px;
+	border: 2px black solid;
+	position: relative;
+	padding: 33px 5px 2px 5px;
+	background-color: gray;
+}
+
+h3 {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	text-align: right;
+	border: 2px black solid;
+	padding: 2px;
+}
+
+#sushi {
+	background-color: red;
+}
+
+#beef {
+	background-color: yellow;
+}
+
+#chicken {
+	background-color: green;
+}
+
+/****Tablet View ****/
+@media (min-width: 768px) and (max-width: 991px) {
+	div.main-text {
+		width: 45%;
+	}
+	
+	div#s3 {
+		display: block;
+		width: 93%;
+	}
+}
+	
+
+/****Smartphone View****/
+@media (max-width: 767px) {
+	div.main-text {
+		float: center;
+		width: 90%;
+	}
+}
